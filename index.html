@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Project PULSE | Student Wellbeing, Support and Safety</title>
+  <meta name="description" content="Project PULSE is a student wellbeing, support and safety initiative for Seychelles, developed as a flagship project of the Tyler Nicholas Foundation.">
+  <meta name="theme-color" content="#D3111C">
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="Project PULSE | Student Wellbeing, Support and Safety">
+  <meta property="og:description" content="Building a safer, more accessible and more responsive student wellbeing system for Seychelles. A flagship project of the Tyler Nicholas Foundation.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/pulse-banner.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="is-loading">
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <div class="loader__inner">
+      <img class="loader__mark" src="assets/img/pulse-mark.png" alt="" width="160" height="124">
+      <svg class="loader__ecg" viewBox="0 0 600 80" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 40 H210 L228 40 L240 12 L254 70 L268 4 L282 62 L292 40 H600" />
+      </svg>
+      <p class="loader__word"><span>Project</span> <strong>PULSE</strong></p>
+      <p class="loader__tag">Student Wellbeing, Support and Safety</p>
+      <span class="visually-hidden">Loading Project PULSE</span>
+    </div>
+    <div class="loader__ribbon" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container site-header__bar">
+      <a class="brand" href="#top" aria-label="Project PULSE home">
+        <img src="assets/img/pulse-mark.png" alt="" width="48" height="37">
+        <span class="brand__text"><span class="brand__project">Project</span><span class="brand__pulse">PULSE</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#top" class="nav__link" data-nav="home">Home</a>
+        <a href="#about" class="nav__link" data-nav="about">About</a>
+        <a href="https://tyler-nicholas-foundation.online/contact/" class="nav__link" target="_blank" rel="noopener">Contact</a>
+        <a href="#student-survey" class="btn btn--red btn--sm nav__cta">Share your feedback</a>
+      </nav>
+
+      <a class="header-tnf" href="https://tyler-nicholas-foundation.online/" target="_blank" rel="noopener" aria-label="Tyler Nicholas Foundation website">
+        <img src="assets/img/tnf-logo.png" alt="Tyler Nicholas Foundation" width="86" height="63">
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="ribbon" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__banner">
+        <img src="assets/img/pulse-banner.jpg" alt="Project PULSE: Student Wellbeing, Support and Safety" width="1600" height="533" fetchpriority="high">
+      </div>
+      <div class="container hero__body">
+        <h1 class="hero__title">Student wellbeing.<br>Support. Safety.</h1>
+        <div class="hero__aside">
+          <p class="hero__lead">Building a safer, more accessible and more responsive student wellbeing system for Seychelles.</p>
+          <div class="btn-row">
+            <a href="#introduction" class="btn btn--red">Learn about PULSE</a>
+            <a href="#student-survey" class="btn btn--outline">Share your feedback</a>
+          </div>
+          <a class="hero__tnf" href="https://tyler-nicholas-foundation.online/" target="_blank" rel="noopener">
+            <img src="assets/img/tnf-logo.png" alt="" width="64" height="47">
+            <span>A flagship project of the<br><strong>Tyler Nicholas Foundation</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTRODUCTION ============ -->
+    <section class="section" id="introduction">
+      <div class="container split">
+        <div class="split__head">
+          <h2 class="h2">Reaching the right person, safely.</h2>
+        </div>
+        <div class="split__body prose">
+          <p class="lead">Project PULSE is a student wellbeing, support and safety initiative being developed under the Tyler Nicholas Foundation.</p>
+          <p>The project aims to create a secure digital pathway through which students can access wellbeing support, communicate with authorised support professionals, raise concerns and receive appropriate assistance directly through the digital systems they already use for education.</p>
+          <p>Rather than creating another completely separate platform for students to manage, Project PULSE is being developed around the possibility of integration into Seychelles' national OpenEMIS education platform.</p>
+          <p class="pullquote">The goal is simple: make it easier for a student who needs support to reach the right person safely, privately and efficiently.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM / SOLUTION ============ -->
+    <section class="section section--mist">
+      <div class="container duo">
+        <article class="duo__col">
+          <span class="tick tick--blue" aria-hidden="true"></span>
+          <p class="kicker">The problem</p>
+          <h2 class="h2">Asking for help should not be difficult.</h2>
+          <div class="prose">
+            <p>Students may experience stress, academic pressure, bullying, personal challenges, safety concerns or other difficulties during their education. However, seeking support is not always easy.</p>
+            <p>Some students may not know who to approach. Others may feel uncomfortable visiting a counselling office publicly, may worry about confidentiality, or may simply not know what support is available.</p>
+            <p>At the same time, schools need better ways to understand broader wellbeing patterns and determine where additional support, resources or counselling capacity may be needed.</p>
+            <p><strong>Project PULSE aims to help bridge that gap.</strong></p>
+          </div>
+        </article>
+        <article class="duo__col">
+          <span class="tick tick--red" aria-hidden="true"></span>
+          <p class="kicker">The PULSE solution</p>
+          <h2 class="h2">One secure pathway to student support.</h2>
+          <div class="prose">
+            <p>Project PULSE proposes a dedicated wellbeing and student-support environment integrated into the national education digital system.</p>
+            <p>A student could access PULSE from their normal student account and use it to check in on their wellbeing, request support, contact an authorised counsellor, report a concern or access trusted information.</p>
+            <p>The system would also help authorised school wellbeing teams organise support requests and follow-ups more efficiently.</p>
+            <p>At a broader level, anonymised and aggregated information could help schools and education authorities better understand student wellbeing trends without unnecessarily exposing individual students' confidential information.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ KEY FEATURES ============ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">What PULSE could offer</h2>
+          <p class="section-head__sub">Six core features, designed around what students need and what support teams can act on.</p>
+        </div>
+        <div class="features">
+          <article class="feature" style="--accent: var(--blue)">
+            <svg class="feature__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 17h6l3-7 4 14 4-10 2 3h7"/></svg>
+            <h3>Wellbeing check-ins</h3>
+            <p>Short and optional student check-ins designed to identify general wellbeing, stress and school-pressure trends.</p>
+          </article>
+          <article class="feature" style="--accent: var(--yellow)">
+            <svg class="feature__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 7h22v14H14l-6 5v-5H5z"/><path d="M11 13h10M11 17h6"/></svg>
+            <h3>Request support</h3>
+            <p>A simple and discreet way for students to ask to speak with an authorised counsellor or wellbeing professional.</p>
+          </article>
+          <article class="feature" style="--accent: var(--red)">
+            <svg class="feature__icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="11" r="5"/><path d="M6 27c1-6 5-9 10-9s9 3 10 9"/></svg>
+            <h3>Counsellor access</h3>
+            <p>Students could request appointments or begin contact with authorised support personnel digitally.</p>
+          </article>
+          <article class="feature" style="--accent: var(--green)">
+            <svg class="feature__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4l11 5v7c0 6-5 10-11 12C10 26 5 22 5 16V9z"/><path d="M16 11v6M16 21v.5"/></svg>
+            <h3>Report a concern</h3>
+            <p>A structured pathway for appropriate bullying, wellbeing and student-safety concerns.</p>
+          </article>
+          <article class="feature" style="--accent: var(--blue)">
+            <svg class="feature__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 6h9c1.5 0 2 1 2 2v19c0-1-1-2-2-2H5zM27 6h-9c-1.5 0-2 1-2 2v19c0-1 1-2 2-2h9z"/></svg>
+            <h3>Support resources</h3>
+            <p>Trusted information explaining where students can find help and what different support services provide.</p>
+          </article>
+          <article class="feature" style="--accent: var(--yellow)">
+            <svg class="feature__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 27V5M5 27h22"/><path d="M10 21v-5M15 21v-9M20 21v-6M25 21V9"/></svg>
+            <h3>Wellbeing insights</h3>
+            <p>Anonymised trends could support better decisions about counselling capacity, student support and wellbeing initiatives.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section section--mist" id="how-it-works">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">How PULSE could work</h2>
+          <p class="section-head__sub">From signing in to follow-up, in four steps.</p>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">01</span>
+            <h3>Student accesses PULSE</h3>
+            <p>The student signs into their normal education account and opens the Project PULSE section.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <h3>Student chooses what they need</h3>
+            <p>They can complete a wellbeing check-in, request support, access resources or raise an appropriate concern.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <h3>The right support team receives it</h3>
+            <p>Requests are routed according to the type of support required and the access permissions established by the responsible authorities.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <h3>Support and follow-up</h3>
+            <p>Students can receive appropriate follow-up while authorised teams manage requests and broader anonymised trends.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ OPENEMIS ============ -->
+    <section class="section" id="openemis">
+      <div class="container emis">
+        <div class="emis__text">
+          <p class="kicker">OpenEMIS</p>
+          <h2 class="h2">Designed with OpenEMIS integration in mind.</h2>
+          <div class="prose">
+            <p>The Seychelles Ministry of Education is developing its national education digital infrastructure using OpenEMIS, an education management information system used internationally.</p>
+            <p>Project PULSE is being designed around the possibility of becoming an integrated student wellbeing and support component within that environment rather than operating as an unrelated standalone platform.</p>
+            <p>This could allow PULSE to work alongside existing student identities, schools, authorised user roles and education information while introducing dedicated wellbeing and support functionality.</p>
+            <p class="note">The exact technical implementation would ultimately need to be developed together with the responsible Ministry and OpenEMIS technical teams.</p>
+          </div>
+        </div>
+
+        <figure class="mock" aria-label="Illustration of how PULSE could appear inside a student dashboard">
+          <div class="mock__top">
+            <span class="mock__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="mock__title">Student dashboard</span>
+          </div>
+          <div class="mock__body">
+            <ul class="mock__side">
+              <li>Overview</li>
+              <li>Attendance</li>
+              <li>Assessments</li>
+              <li>Timetable</li>
+              <li class="is-active"><img src="assets/img/pulse-mark.png" alt="" width="18" height="14"> PULSE</li>
+            </ul>
+            <div class="mock__panel">
+              <p class="mock__hello">How are you feeling today?</p>
+              <div class="mock__moods" aria-hidden="true">
+                <span>Great</span><span>Okay</span><span>Not great</span>
+              </div>
+              <ul class="mock__menu">
+                <li><span style="--c: var(--yellow)"></span>Request support</li>
+                <li><span style="--c: var(--red)"></span>Speak to a counsellor</li>
+                <li><span style="--c: var(--green)"></span>Report a concern</li>
+                <li><span style="--c: var(--blue)"></span>Resources</li>
+                <li><span style="--c: var(--ink-soft)"></span>My requests</li>
+              </ul>
+            </div>
+          </div>
+          <figcaption>Concept illustration only. Not a live system.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ PRIVACY ============ -->
+    <section class="section section--ink" id="privacy-principles">
+      <div class="container trust">
+        <div class="trust__head">
+          <h2 class="h2">Built around trust.</h2>
+          <p class="trust__lead">Student trust must be at the centre of Project PULSE. If students do not trust it, it cannot help them.</p>
+        </div>
+        <ul class="trust__list">
+          <li>
+            <h3>Confidential by design</h3>
+            <p>The project is being designed around principles of confidentiality, appropriate role-based access, safeguarding and responsible use of information.</p>
+          </li>
+          <li>
+            <h3>Only the people who need it</h3>
+            <p>Private student wellbeing information should only be available to authorised people who genuinely require access to provide support or meet safeguarding responsibilities.</p>
+          </li>
+          <li>
+            <h3>No automatic teacher access</h3>
+            <p>Teachers should not automatically receive access to confidential wellbeing information simply because they teach a student.</p>
+          </li>
+          <li>
+            <h3>Trends, not conversations</h3>
+            <p>National-level analysis should generally focus on anonymised and aggregated trends rather than unrestricted access to individual counselling conversations.</p>
+          </li>
+        </ul>
+        <p class="trust__statement">Project PULSE is intended as a support system, not a disciplinary or surveillance system.</p>
+      </div>
+    </section>
+
+    <!-- ============ STUDENT SURVEY ============ -->
+    <section class="section" id="student-survey">
+      <div class="container survey">
+        <div class="survey__intro">
+          <p class="kicker">Student consultation</p>
+          <h2 class="h2">PULSE should be built with students, not simply for them.</h2>
+          <div class="prose">
+            <p>Before Project PULSE moves further into development, student feedback is essential.</p>
+            <p>The Project PULSE Student Consultation is designed to understand what students would actually find useful, what would make them trust the platform, which features matter most and what concerns they may have about privacy and confidentiality.</p>
+            <p><strong>Responses are anonymous</strong> and will help guide the development of the project.</p>
+          </div>
+          <div class="btn-row">
+            <button class="btn btn--red" type="button" data-form-toggle="studentForm" aria-expanded="false" aria-controls="studentForm">Complete student survey</button>
+            <a class="btn btn--ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSdGeqLOmaiAcdGEh4lnYlJNqrppRVw1omq_SXhXM4t_tvQdOg/viewform" target="_blank" rel="noopener">Open in a new tab</a>
+          </div>
+        </div>
+
+        <div class="pulse-form" id="studentForm" hidden
+             data-src="https://docs.google.com/forms/d/e/1FAIpQLSdGeqLOmaiAcdGEh4lnYlJNqrppRVw1omq_SXhXM4t_tvQdOg/viewform?embedded=true"
+             data-height="6718"
+             data-title="Project PULSE Student Survey">
+          <!-- The iframe is added here by assets/js/main.js when the survey is opened -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STAKEHOLDER SURVEY ============ -->
+    <section class="section section--mist" id="stakeholder-survey">
+      <div class="container survey">
+        <div class="survey__intro">
+          <p class="kicker">Stakeholder consultation</p>
+          <h2 class="h2">Help shape Project PULSE.</h2>
+          <div class="prose">
+            <p>Project PULSE also needs input from those who may be involved in supporting, implementing or working alongside the system.</p>
+            <p>The stakeholder consultation is intended for educators, counsellors, school leaders, parents and guardians, youth professionals, health professionals, safeguarding personnel, technology professionals, public-sector stakeholders and other relevant organisations.</p>
+            <p>The consultation explores potential benefits, risks, privacy requirements, implementation concerns and the features stakeholders believe should be prioritised. This feedback will help ensure that Project PULSE is practical for both students and the professionals responsible for supporting them.</p>
+          </div>
+          <div class="btn-row">
+            <button class="btn btn--blue" type="button" data-form-toggle="stakeholderForm" aria-expanded="false" aria-controls="stakeholderForm">Complete stakeholder survey</button>
+          </div>
+        </div>
+
+        <!-- PROJECT PULSE STAKEHOLDER SURVEY
+             To activate: paste the Google Form embed URL (the one ending in ?embedded=true)
+             into data-src below, and set data-height to the height Google gives you. -->
+        <div class="pulse-form" id="stakeholderForm" hidden
+             data-src=""
+             data-height="5000"
+             data-title="Project PULSE Stakeholder Survey">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about__hero">
+          <img src="assets/img/pulse-logo.png" alt="Project PULSE logo" width="291" height="320">
+          <div>
+            <h2 class="h1">About Project PULSE</h2>
+            <p class="lead">When a student needs support, reaching someone who can help should be straightforward, discreet and accessible.</p>
+          </div>
+        </div>
+
+        <div class="about__grid">
+          <aside class="about__toc" aria-label="About sections">
+            <p class="about__toc-title">On this page</p>
+            <a href="#why">Why PULSE was created</a>
+            <a href="#pulse-openemis">PULSE and OpenEMIS</a>
+            <a href="#mission">Mission and vision</a>
+            <a href="#objectives">Objectives</a>
+            <a href="#who">Who PULSE is for</a>
+            <a href="#principles">Privacy principles</a>
+            <a href="#development">Project development</a>
+            <a href="#youth-ambassadors">Youth Ambassadors</a>
+            <a href="#tnf">Tyler Nicholas Foundation</a>
+          </aside>
+
+          <div class="about__content">
+
+            <article class="block" id="why">
+              <h3 class="h3">Why PULSE was created</h3>
+              <div class="prose">
+                <p>Project PULSE is a student wellbeing, support and safety initiative developed as a flagship project under the Tyler Nicholas Foundation. The project originated as a post-program action project following participation in the Youth Ambassadors programme and is being developed with the long-term objective of improving how students in Seychelles access wellbeing support within the education system.</p>
+                <p>Students can experience a wide range of challenges during their education. These may include academic pressure, stress, bullying, interpersonal difficulties, concerns about safety, problems at home or simply periods when they feel overwhelmed and need somebody to speak with.</p>
+                <p>While schools already provide different forms of student support, students do not always feel comfortable accessing those services directly. A student may hesitate to physically approach a counselling office, may not know who is responsible for a particular issue or may worry about who will know that they have asked for help.</p>
+                <p>Project PULSE seeks to address these barriers by exploring how student wellbeing and support services could be made more accessible through the digital infrastructure students already use.</p>
+                <p>The proposed model would allow a student to enter a dedicated PULSE environment from their education account. Within that environment, students could potentially complete short wellbeing check-ins, request assistance, contact authorised counsellors, request appointments, raise bullying or safety concerns and access trusted wellbeing and support resources.</p>
+                <p>The project is not intended to replace counsellors, teachers, health professionals or safeguarding personnel. Technology would instead provide a pathway connecting students with the people and services capable of supporting them. Human review, professional judgement and appropriate safeguarding procedures would remain essential.</p>
+                <p>Project PULSE is also intended to help schools understand broader student wellbeing needs. When appropriate privacy safeguards are applied, aggregated and anonymised information may help identify trends such as increasing student stress, periods of high academic pressure, increased demand for counselling or patterns in reported bullying concerns. Such information could help schools and education authorities make better-informed decisions about wellbeing programmes, counsellor capacity, staffing and resources.</p>
+              </div>
+            </article>
+
+            <article class="block" id="pulse-openemis">
+              <h3 class="h3">PULSE and OpenEMIS</h3>
+              <div class="prose">
+                <p>Project PULSE is currently being developed around the possibility of integration into Seychelles' OpenEMIS-based national education platform.</p>
+                <p>OpenEMIS is an education management information system designed to support governments and education systems in managing student, school and education information.</p>
+                <p>Rather than creating another independent account, application and database for students, PULSE could potentially operate as a dedicated module or connected service within the existing national education infrastructure. A student could therefore access academic services and wellbeing support through the same wider digital environment.</p>
+                <p class="note">The final technical architecture has not yet been determined and would require consultation and development with the relevant Ministry of Education and technical teams.</p>
+              </div>
+            </article>
+
+            <div class="block mv" id="mission">
+              <article class="mv__item mv__item--red">
+                <h3 class="h3">Our mission</h3>
+                <p>To make student wellbeing support more accessible, confidential and responsive by connecting students with appropriate support through secure digital tools integrated into the education environment.</p>
+              </article>
+              <article class="mv__item mv__item--blue">
+                <h3 class="h3">Our vision</h3>
+                <p>A Seychelles education system where every student knows where to seek support, feels able to ask for help and can access appropriate assistance without unnecessary barriers.</p>
+              </article>
+            </div>
+
+            <article class="block" id="objectives">
+              <h3 class="h3">Objectives</h3>
+              <ul class="checklist">
+                <li>Improve student access to wellbeing and counselling support.</li>
+                <li>Reduce barriers that prevent students from asking for help.</li>
+                <li>Strengthen communication between students and authorised support professionals.</li>
+                <li>Provide safer pathways for raising wellbeing, bullying and safety concerns.</li>
+                <li>Support schools in understanding broader student wellbeing needs.</li>
+                <li>Provide useful anonymised information that can support better education planning.</li>
+                <li>Protect confidentiality and student trust.</li>
+                <li>Ensure students participate in shaping the system intended to support them.</li>
+              </ul>
+            </article>
+
+            <article class="block" id="who">
+              <h3 class="h3">Who PULSE is for</h3>
+              <div class="audience">
+                <div class="audience__item">
+                  <h4>Students</h4>
+                  <p>A discreet, familiar place to check in, ask for help, reach a counsellor or raise a concern.</p>
+                </div>
+                <div class="audience__item">
+                  <h4>Counsellors and wellbeing teams</h4>
+                  <p>A clearer way to receive, organise and follow up on support requests.</p>
+                </div>
+                <div class="audience__item">
+                  <h4>Schools and education authorities</h4>
+                  <p>Anonymised, aggregated insight to plan wellbeing programmes, staffing and resources.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="block" id="principles">
+              <h3 class="h3">Privacy and confidentiality principles</h3>
+              <div class="prose">
+                <p>Project PULSE is not intended to become a student surveillance system. Confidentiality and trust are fundamental to the concept.</p>
+                <p>Information should only be accessible according to appropriate roles and responsibilities. Counsellors and authorised wellbeing or safeguarding personnel may require access to certain individual information in order to provide support, while school administrators or national education authorities may require only broader anonymised information. Individual counselling conversations should not simply become general administrative records available to anyone within an education system.</p>
+              </div>
+              <ul class="tags" aria-label="Design principles">
+                <li>Confidentiality</li>
+                <li>Safeguarding</li>
+                <li>Role-based access</li>
+                <li>Responsible data use</li>
+                <li>Transparency</li>
+                <li>Non-punitive support</li>
+              </ul>
+              <div class="prose">
+                <p>Students should understand what information is collected, why it is collected and who may access it. Seeking wellbeing support should not negatively affect a student's academic record or automatically become a disciplinary matter.</p>
+              </div>
+            </article>
+
+            <article class="block" id="development">
+              <h3 class="h3">Developing PULSE</h3>
+              <div class="prose">
+                <p>Project PULSE is currently in its development and consultation stage. The project has been presented to representatives of the Seychelles Ministry of Education as part of early discussions around how the concept could complement the country's developing digital education infrastructure.</p>
+                <p>The next stages of the project include:</p>
+              </div>
+              <ol class="timeline">
+                <li class="is-current"><span>Stakeholder consultation</span><em>Now</em></li>
+                <li class="is-current"><span>Student feedback</span><em>Now</em></li>
+                <li><span>Technical discussions</span></li>
+                <li><span>Prototype development</span></li>
+                <li><span>Privacy and safeguarding planning</span></li>
+                <li><span>Exploring a pilot model</span></li>
+              </ol>
+            </article>
+
+            <article class="block" id="youth-ambassadors">
+              <h3 class="h3">From an idea to action</h3>
+              <div class="prose">
+                <p>Project PULSE was initiated as a post-program action project following participation in the Youth Ambassadors programme.</p>
+                <p>The project reflects the programme's emphasis on youth leadership, community engagement and turning ideas into practical initiatives capable of creating positive local impact.</p>
+                <p>Following its initial development, Project PULSE was established under the Tyler Nicholas Foundation to provide the project with a clearer organisational structure and support its long-term development, partnerships and potential implementation.</p>
+              </div>
+            </article>
+
+            <article class="block tnf" id="tnf">
+              <img class="tnf__logo" src="assets/img/tnf-logo.png" alt="Tyler Nicholas Foundation logo" width="214" height="157" loading="lazy">
+              <div>
+                <h3 class="h3">A project of the Tyler Nicholas Foundation</h3>
+                <div class="prose">
+                  <p>Project PULSE is a flagship project of the Tyler Nicholas Foundation.</p>
+                  <p>The Foundation provides Project PULSE with an organisational structure through which the initiative can be developed, consulted on and potentially supported through partnerships and funding.</p>
+                  <p>Project PULSE maintains its own project identity while operating under the wider mission of the Tyler Nicholas Foundation to support young people, strengthen communities and develop practical initiatives addressing challenges affecting youth in Seychelles.</p>
+                </div>
+                <a class="btn btn--green" href="https://tyler-nicholas-foundation.online/" target="_blank" rel="noopener">Visit the Tyler Nicholas Foundation</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="cta">
+      <svg class="cta__ecg" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 60 H520 L545 60 L562 20 L582 104 L604 8 L624 92 L640 60 H1200"/>
+      </svg>
+      <div class="container cta__inner">
+        <h2 class="h1">Help us build PULSE.</h2>
+        <p class="cta__text">Project PULSE is still being shaped. Students, educators, counsellors, families, wellbeing professionals and other stakeholders all have perspectives that can help determine what the project should become.</p>
+        <p class="cta__text"><strong>If PULSE is going to support students, students must have a voice in how it is designed.</strong></p>
+        <div class="btn-row btn-row--center">
+          <a href="#student-survey" class="btn btn--white">Student survey</a>
+          <a href="#stakeholder-survey" class="btn btn--line">Stakeholder survey</a>
+          <a href="https://tyler-nicholas-foundation.online/contact/" class="btn btn--line" target="_blank" rel="noopener">Contact the Foundation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HELP NOTICE ============ -->
+    <aside class="help-note" aria-label="Need support now">
+      <div class="container help-note__inner">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 16.5v.5"/></svg>
+        <p><strong>Need support right now?</strong> Project PULSE is still in development and is not yet a support service. Please speak to your school counsellor, a teacher or another trusted adult. In an emergency in Seychelles, call <a href="tel:999">999</a>.</p>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="ribbon" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="#top" aria-label="Project PULSE home">
+          <img src="assets/img/pulse-mark.png" alt="" width="56" height="43" loading="lazy">
+          <span class="brand__text"><span class="brand__project">Project</span><span class="brand__pulse">PULSE</span></span>
+        </a>
+        <p class="footer__tag">Student Wellbeing &bull; Support &bull; Safety</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <div class="footer__links">
+          <a href="#top">Home</a>
+          <a href="#about">About</a>
+          <a href="https://tyler-nicholas-foundation.online/contact/" target="_blank" rel="noopener">Contact</a>
+        </div>
+        <div class="footer__links footer__links--legal">
+          <a href="https://tyler-nicholas-foundation.online/privacy" target="_blank" rel="noopener">Privacy Policy</a>
+          <a href="https://tyler-nicholas-foundation.online/terms" target="_blank" rel="noopener">Terms of Use</a>
+        </div>
+      </nav>
+
+      <a class="footer__tnf" href="https://tyler-nicholas-foundation.online/" target="_blank" rel="noopener">
+        <span>A flagship project of</span>
+        <img src="assets/img/tnf-logo.png" alt="Tyler Nicholas Foundation" width="150" height="110" loading="lazy">
+      </a>
+    </div>
+    <div class="container footer__legal">
+      <p>&copy; <span id="year">2026</span> Tyler Nicholas Foundation. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 14l6-6 6 6"/></svg>
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
