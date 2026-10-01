@@ -7,19 +7,19 @@
   var body = document.body;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---------- Loading screen ---------- */
+  /* ---------- Loading screen ----------
+     The duration is decided in the <head> of each page (window.PULSE_LOAD_TIME):
+     6 seconds on the first visit, shorter when moving between Home and About. */
   var loader = document.getElementById("loader");
-  var MIN_SHOW = reduceMotion ? 0 : 1600;   // show the heartbeat at least once
-  var MAX_SHOW = 5000;                       // never block the page longer than this
+  var MIN_SHOW = window.PULSE_LOAD_TIME || 6000;
+  var MAX_SHOW = MIN_SHOW + 4000;            // never block the page longer than this
   var start = Date.now();
-  var seen = false;
-  try { seen = sessionStorage.getItem("pulse-loaded") === "1"; } catch (e) {}
-  if (seen) MIN_SHOW = 350;                  // shorter on repeat visits in the same session
 
   function hideLoader() {
     if (!loader || loader.classList.contains("is-done")) return;
     var wait = Math.max(0, MIN_SHOW - (Date.now() - start));
     setTimeout(function () {
+      if (loader.classList.contains("is-done")) return;
       loader.classList.add("is-done");
       body.classList.remove("is-loading");
       try { sessionStorage.setItem("pulse-loaded", "1"); } catch (e) {}
@@ -29,6 +29,15 @@
   if (document.readyState === "complete") hideLoader();
   else window.addEventListener("load", hideLoader);
   setTimeout(hideLoader, MAX_SHOW);
+
+  /* ---------- Protected photos (no right-click, no drag, no long-press save) ---------- */
+  document.querySelectorAll(".photo").forEach(function (el) {
+    var src = el.getAttribute("data-photo");
+    if (src) el.style.backgroundImage = "url('" + src + "')";
+    ["contextmenu", "dragstart", "selectstart"].forEach(function (evt) {
+      el.addEventListener(evt, function (e) { e.preventDefault(); });
+    });
+  });
 
   /* ---------- Year ---------- */
   var year = document.getElementById("year");
@@ -63,19 +72,6 @@
   }
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
-
-  /* ---------- Active nav (Home / About) ---------- */
-  var about = document.getElementById("about");
-  var homeLink = document.querySelector('[data-nav="home"]');
-  var aboutLink = document.querySelector('[data-nav="about"]');
-  function setNav() {
-    if (!about) return;
-    var inAbout = about.getBoundingClientRect().top < window.innerHeight * 0.4;
-    if (homeLink) homeLink.classList.toggle("is-active", !inAbout);
-    if (aboutLink) aboutLink.classList.toggle("is-active", inAbout);
-  }
-  window.addEventListener("scroll", setNav, { passive: true });
-  setNav();
 
   /* ---------- About table of contents highlight ---------- */
   var tocLinks = document.querySelectorAll(".about__toc a");
@@ -126,7 +122,12 @@
     var iframe = document.createElement("iframe");
     iframe.src = src;
     iframe.title = title;
-    iframe.height = panel.dataset.height || "3000";
+    var h = panel.dataset.height || "3000";
+    if (h === "viewport") {
+      iframe.className = "pulse-form__frame--viewport";   // scrolls inside a screen-sized frame
+    } else {
+      iframe.height = h;
+    }
     iframe.setAttribute("loading", "lazy");
     iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("marginheight", "0");
